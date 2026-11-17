@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 280" width="320" height="280">
+  <defs>
+    <!-- Paper Shadow -->
+    <filter id="paperShadow" x="-20%" y="-20%" width="150%" height="160%">
+      <feDropShadow dx="3" dy="14" stdDeviation="12" flood-color="#000000" flood-opacity="0.8" />
+    </filter>
+
+    <!-- Translucent Masking Tape Texture -->
+    <linearGradient id="tapeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fff4d0" stop-opacity="0.6" />
+      <stop offset="50%" stop-color="#f5e8b8" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#fff4d0" stop-opacity="0.55" />
+    </linearGradient>
+
+    <!-- Dark Aged Index Card Background -->
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#181a22" />
+      <stop offset="100%" stop-color="#121319" />
+    </linearGradient>
+  </defs>
+
+  <g transform="rotate(-3 160 140)" filter="url(#paperShadow)">
+    <!-- Torn Paper Sheet with Jagged Bottom Tear -->
+    <path d="M 20 26 
+             L 300 26 
+             L 300 230 
+             L 282 238 L 265 228 L 248 240 L 230 232 L 212 242 L 195 230 
+             L 178 240 L 160 232 L 142 244 L 125 232 L 108 240 L 90 234 
+             L 72 242 L 55 230 L 38 238 L 20 230 Z" 
+          fill="url(#cardBg)" 
+          stroke="#2d3345" 
+          stroke-width="1.5" />
+
+    <!-- Notebook / Grid Lines on Paper -->
+    <line x1="30" y1="62" x2="290" y2="62" stroke="#252a3b" stroke-width="1" />
+    <line x1="30" y1="92" x2="290" y2="92" stroke="#252a3b" stroke-width="1" stroke-dasharray="3 3" />
+    <line x1="30" y1="122" x2="290" y2="122" stroke="#252a3b" stroke-width="1" stroke-dasharray="3 3" />
+    <line x1="30" y1="152" x2="290" y2="152" stroke="#252a3b" stroke-width="1" stroke-dasharray="3 3" />
+    <line x1="30" y1="182" x2="290" y2="182" stroke="#252a3b" stroke-width="1" stroke-dasharray="3 3" />
+    <line x1="30" y1="212" x2="290" y2="212" stroke="#252a3b" stroke-width="1" stroke-dasharray="3 3" />
+
+    <!-- Red Margin Line -->
+    <line x1="56" y1="26" x2="56" y2="230" stroke="#ff1f71" stroke-width="1" opacity="0.45" />
+
+    <!-- Handwritten / Monospace Code Scribbles -->
+    <text x="66" y="52" 
+          font-family="'Space Mono', 'Consolas', monospace" 
+          font-size="11" 
+          font-weight="700" 
+          letter-spacing="1.5" 
+          fill="#ff1f71">// CODE_CLUB // LOG #22</text>
+
+    <text x="66" y="80" 
+          font-family="'Space Mono', 'Consolas', monospace" 
+          font-size="10.5" 
+          fill="#9ea5b8">1. Turn ideas into working apps.</text>
+
+    <text x="66" y="108" 
+          font-family="'Space Mono', 'Consolas', monospace" 
+          font-size="10.5" 
+          fill="#9ea5b8">2. Break systems to learn why.</text>
+
+    <text x="66" y="138" 
+          font-family="'Space Mono', 'Consolas', monospace" 
+          font-size="10" 
+          fill="#e2e6f0">const yuda = {</text>
+
+    <text x="82" y="162" 
+          font-family="'Space Mono', 'Consolas', monospace" 
+          font-size="10" 
+          fill="#00f0ff">role: "Web Dev Enthusiast",</text>
+
+    <text x="82" y="186" 
+          font-family="'Space Mono', 'Consolas', monospace" 
+          font-size="10" 
+          fill="#ffb703">stack: ["Laravel", "Vue", "Kotlin"]</text>
+
+    <text x="66" y="210" 
+          font-family="'Space Mono', 'Consolas', monospace" 
+          font-size="10" 
+          fill="#e2e6f0">}; // ready to deploy</text>
+
+    <!-- Coffee Ring Stain / Subtle Grunge Stamp -->
+    <circle cx="245" cy="175" r="32" 
+            fill="none" 
+            stroke="#ff1f71" 
+            stroke-width="2.5" 
+            stroke-dasharray="8 4 12 3 5 8" 
+            opacity="0.22" />
+    <circle cx="243" cy="173" r="30" 
+            fill="none" 
+            stroke="#ff1f71" 
+            stroke-width="1.2" 
+            stroke-dasharray="14 6 4 4" 
+            opacity="0.15" />
+    <text x="245" y="180" 
+          font-family="'Arial Black', Impact, sans-serif" 
+          font-size="10" 
+          fill="#ff1f71" 
+          opacity="0.3" 
+          text-anchor="middle" 
+          letter-spacing="2">PASSED</text>
+
+    <!-- Translucent Masking Tape Strip (Top edge holding note down) -->
+    <g transform="rotate(2 160 26)">
+      <polygon points="105,12 215,10 212,38 102,40" fill="url(#tapeGrad)" />
+      <!-- Tape wrinkles / edges -->
+      <line x1="105" y1="12" x2="102" y2="40" stroke="#e0caa0" stroke-width="1" stroke-dasharray="2 1" />
+      <line x1="215" y1="10" x2="212" y2="38" stroke="#e0caa0" stroke-width="1" stroke-dasharray="2 1" />
+      <line x1="105" y1="25" x2="214" y2="24" stroke="#ffffff" stroke-width="0.75" opacity="0.4" />
+    </g>
+  </g>
+</svg>
+
